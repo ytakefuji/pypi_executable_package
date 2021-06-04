@@ -169,3 +169,15 @@ import __main__
 $ cat __main__.py
 import bugcount
 </pre>
+
+# How to update a new version of your program
+<pre>
+1. modify the program (bugcount.py) for update.
+2. version number in setup.py and setup.cfg must be modified
+3. remove all files in dist folder.
+4. run the following commands to generate the necessary files in dist folder.
+ $ python setup.py sdist bdist_wheel
+ $ python setup.py install
+5. finally upload the new package to pypi.
+ $ twine upload dist/*
+</pre>
