@@ -8,6 +8,20 @@ setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
 create your account:
 https://pypi.org/account/register/
 
+# Create .pypirc file using your account information.
+
+<pre>
+$ cat .pypirc
+[distutils]
+index-servers =
+    pypi
+
+[pypi]
+repository=https://pypi.python.org/pypi
+username= ENTER your account name
+password= ENTER your account password
+</pre>
+
 <pre>
 $ tree
 .
