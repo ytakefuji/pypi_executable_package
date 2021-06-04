@@ -123,7 +123,7 @@ For testing dist package,
 $ twine check dist/*
 You can also register testpypi before running the following command.
 $ twine upload --repository testpypi dist/*
-You can upload your package:
+You can finally upload your package to pypi:
 $ twine upload dist/*
 If the command is successful, pypi link will be shown.
 </pre>
