@@ -124,6 +124,9 @@ $ twine upload --repository testpypi dist/*
 You can finally upload your package to pypi:
 $ twine upload dist/*
 If the command is successful, pypi link will be shown.
+
+entry_points in setuptools.setup can generate bin execution file.
+
 </pre>
 
 <pre>
