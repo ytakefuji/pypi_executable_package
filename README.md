@@ -121,7 +121,7 @@ In order to upload a new package, twine installation is needed.
 $ pip install twine
 For testing dist package,
 $ twine check dist/*
-You can also register testpypi before running the following command.
+Option: You can also register testpypi before running the following command.
 $ twine upload --repository testpypi dist/*
 You can finally upload your package to pypi:
 $ twine upload dist/*
