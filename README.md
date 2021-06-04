@@ -154,15 +154,15 @@ python_requires = >=3.6
 Where = src
 </pre>
 
-# __init__.py
 <pre>
+# __init__.py
 $ cat __init__.py
 import bugcount
 import __main__
 </pre>
 
-# __main__.py
 <pre>
+# __main__.py
 $ cat __main__.py
 import bugcount
 </pre>
