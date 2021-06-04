@@ -1,5 +1,10 @@
 # pypi_executable_package
 
+This repository shows how to generate executable python program for pypi package.
+
+setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
+
+
 setup.py plays a key role for packaging pypi.
 <pre>
 $ cat setup.py
@@ -36,3 +41,30 @@ setuptools.setup(
     },
 )
 </pre>
+
+<pre>
+$ cat setup.cfg
+[metadata]
+name = bugcount
+version = 0.0.1
+author = yoshiyasu takefuji
+author_email = takefuji@keio.jp
+description = Counting the number of objects or dead bugs
+long_description = file: README.md
+long_description_content_type = text/markdown
+url = https://github.com/ytakefuji/counting-for-entomologists
+project_urls =
+    Bug Tracker = https://github.com/ytakefuji/counting-for-entomologists
+classifiers =
+    Programming Language :: Python :: 3
+    License :: OSI Approved :: MIT License
+    Operating System :: OS Independent
+
+[options]
+package_dir =
+    = src
+packages = find:
+python_requires = >=3.6
+
+[options.packages.find]
+Where = src
