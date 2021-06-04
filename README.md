@@ -152,6 +152,7 @@ python_requires = >=3.6
 
 [options.packages.find]
 Where = src
+</pre>
 
 # __init__.py
 $ cat __init__.py
