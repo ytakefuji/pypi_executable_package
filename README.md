@@ -115,6 +115,17 @@ dist folder can be automatically generated:
 $ python setup.py sdist bdist_wheel
 build folder can be automatically generated:
 $ python setup.py install
+for testing
+$ python setup.py test
+In order to upload a new package, twine installation is needed.
+$ pip install twine
+For testing dist package,
+$ twine check dist/*
+You can also register testpypi before running the following command.
+$ twine upload --repository testpypi dist/*
+You can upload your package:
+$ twine upload dist/*
+If the command is successful, pypi link will be shown.
 </pre>
 
 <pre>
