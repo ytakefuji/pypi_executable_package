@@ -109,6 +109,14 @@ setuptools.setup(
 )
 </pre>
 
+# setup.py can create build and dist folders:
+<pre>
+dist folder can be automatically generated:
+$ python setup.py sdist bdist_wheel
+build folder can be automatically generated:
+$ python setup.py install
+</pre>
+
 <pre>
 $ cat setup.cfg
 [metadata]
