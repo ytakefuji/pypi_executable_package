@@ -152,3 +152,12 @@ python_requires = >=3.6
 
 [options.packages.find]
 Where = src
+
+# __init__.py
+$ cat __init__.py
+import bugcount
+import __main__
+
+# __main__.py
+$ cat __main__.py
+import bugcount
