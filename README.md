@@ -109,7 +109,7 @@ $ python setup.py sdist bdist_wheel
 egg file in build folder can be automatically generated:
 $ python setup.py install
 
-For testing
+Option: For testing
 $ python setup.py test
 
 In order to upload a new package, twine installation is needed.
