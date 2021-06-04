@@ -4,6 +4,55 @@ This repository shows how to generate executable python program for pypi package
 
 setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
 
+<pre>
+$ tree
+.
+├── LICENSE.txt
+├── MANIFEST.in
+├── README.md
+├── build
+│   ├── bdist.linux-x86_64
+│   └── lib
+│       ├── bugcount.py
+│       └── src
+│           ├── __init__.py
+│           ├── __main__.py
+│           ├── bug_count.py
+│           ├── bugcount.py
+│           └── main.py
+├── dist
+│   ├── bugcount-0.0.1-py3-none-any.whl
+│   ├── bugcount-0.0.1-py3.8.egg
+│   └── bugcount-0.0.1.tar.gz
+├── setup.cfg
+├── setup.py
+└── src
+    ├── __init__.py
+    ├── __main__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-38.pyc
+    │   ├── bug_count.cpython-38.pyc
+    │   └── bugcount.cpython-38.pyc
+    ├── blur.png
+    ├── bugcount.egg-info
+    │   ├── PKG-INFO
+    │   ├── SOURCES.txt
+    │   ├── dependency_links.txt
+    │   ├── entry_points.txt
+    │   └── top_level.txt
+    ├── bugcount.py
+    ├── edges.png
+    ├── gray.png
+    ├── main.py
+    ├── pillbug.png
+    ├── r.png
+    └── src
+        ├── __init__.py
+        ├── __main__.py
+        ├── bugcount.py
+        ├── main.py
+        └── pillbug.png
+</pre>
 
 setup.py plays a key role for packaging pypi.
 <pre>
