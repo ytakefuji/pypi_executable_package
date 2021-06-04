@@ -4,6 +4,10 @@ This repository shows how to generate executable python program for pypi package
 
 setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
 
+# How to register in pypi
+create your account:
+https://pypi.org/account/register/
+
 <pre>
 $ tree
 .
