@@ -1,6 +1,6 @@
 # pypi_executable_package
 
-This repository shows how to generate executable python program for pypi package.
+This repository shows how to generate executable python program in bin folder for pypi package.
 
 setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
 
