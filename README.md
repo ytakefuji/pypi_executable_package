@@ -103,18 +103,24 @@ setuptools.setup(
 
 # setup.py can create build and dist folders:
 <pre>
-dist folder can be automatically generated:
+dist and build folders can be automatically generated:
 $ python setup.py sdist bdist_wheel
-build folder can be automatically generated:
+
+egg file in build folder can be automatically generated:
 $ python setup.py install
-for testing
+
+For testing
 $ python setup.py test
+
 In order to upload a new package, twine installation is needed.
 $ pip install twine
+
 For testing dist package,
 $ twine check dist/*
+
 Option: You can also register testpypi before running the following command.
 $ twine upload --repository testpypi dist/*
+
 You can finally upload your package to pypi:
 $ twine upload dist/*
 If the command is successful, pypi link will be shown.
