@@ -35,9 +35,7 @@ $ tree
 │       └── src
 │           ├── __init__.py
 │           ├── __main__.py
-│           ├── bug_count.py
-│           ├── bugcount.py
-│           └── main.py
+│           └── bugcount.py
 ├── dist
 │   ├── bugcount-0.0.1-py3-none-any.whl
 │   ├── bugcount-0.0.1-py3.8.egg
@@ -51,7 +49,6 @@ $ tree
     │   ├── __init__.cpython-38.pyc
     │   ├── bug_count.cpython-38.pyc
     │   └── bugcount.cpython-38.pyc
-    ├── blur.png
     ├── bugcount.egg-info
     │   ├── PKG-INFO
     │   ├── SOURCES.txt
@@ -59,16 +56,11 @@ $ tree
     │   ├── entry_points.txt
     │   └── top_level.txt
     ├── bugcount.py
-    ├── edges.png
-    ├── gray.png
-    ├── main.py
     ├── pillbug.png
-    ├── r.png
     └── src
         ├── __init__.py
         ├── __main__.py
         ├── bugcount.py
-        ├── main.py
         └── pillbug.png
 </pre>
 
