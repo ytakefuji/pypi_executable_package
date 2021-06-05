@@ -17,6 +17,15 @@ $ bugcount pillbug.png
 
 <img src="https://github.com/ytakefuji/counting-for-entomologists/raw/main/r75.png" width=270 height=270>
 
+You can change the minimum size of objects by Canny-coeffient (default:75):
+
+$ bugcount pillbug.png 10
+
+or
+
+$ bugcount pillbug.png 100
+
+
 # How to register in pypi
 create your account:
 https://pypi.org/account/register/
