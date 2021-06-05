@@ -10,7 +10,7 @@ Successfully uploading a new package can run the following commands to run bugco
 
 $ pip install -U bugcount --user
 
-You should download pillbug.png for testing:
+You should download pillbug.png file for testing:
 
 https://github.com/ytakefuji/counting-for-entomologists/raw/main/pillbug.png
 
