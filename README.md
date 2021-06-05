@@ -123,6 +123,10 @@ $ python setup.py sdist bdist_wheel
 egg file in build folder can be automatically generated:
 $ python setup.py install
 
+You should test your program (bugcount) before uploading the pypi package.
+For testing, you should download pillbug.png and run the following command:
+$ bugcount pillbug.png
+
 Option: For testing
 $ python setup.py test
 
@@ -188,10 +192,11 @@ import bugcount
 <pre>
 1. modify the program (bugcount.py) for update.
 2. version number in setup.py and setup.cfg must be modified
-3. remove all files in dist folder since pypi can only accept new version.
+3. remove all files in dist folder and in build folder 
+   since pypi can only accept new version.
 4. run the following commands to generate the necessary files in dist folder.
  $ python setup.py sdist bdist_wheel
- $ python setup.py install
+ $ python setup.py install for testing bugcount execution.
 5. finally upload the new package to pypi.
  $ twine upload dist/*
 </pre>
