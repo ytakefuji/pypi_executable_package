@@ -139,9 +139,10 @@ setuptools.setup(
 )
 </pre>
 
-# setup.py can create build and dist folders:
+# setup.py can automatically create a build folder and a dist folder.:
 <pre>
-dist and build folders can be automatically generated:
+A dist folder and a build folder can be automatically generated 
+by the following command:
 $ python setup.py sdist bdist_wheel
 
 egg file in build folder can be automatically generated:
