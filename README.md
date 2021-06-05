@@ -225,5 +225,7 @@ import bugcount
  $ bugcount pillbug.png
 6. finally upload the new package to pypi.
  $ twine upload dist/*
- pypi will show the new version of pypi URL address.
+ pypi will show the new version of pypi URL address:
+View at:
+https://pypi.org/project/bugcount/0.0.6/
 </pre>
