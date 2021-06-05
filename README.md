@@ -4,7 +4,7 @@ This repository shows how to generate executable python program in bin folder fo
 
 setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
 
-bugcount.py is automatically converted to bugcount binary executable code.
+bugcount.py as example is automatically converted to bugcount binary executable code.
 
 Successfully uploading a new package can run the following commands to run bugcount program.
 
