@@ -6,6 +6,15 @@ setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
 
 bugcount.py is automatically converted to bugcount binary executable code.
 
+Successfully uploading a new package can run the following commands to run bugcount program.
+
+$ pip install -U bugcount --user
+
+You should download pillbug.png for testing:
+https://github.com/ytakefuji/counting-for-entomologists/raw/main/pillbug.png
+
+$ bugcount pillbug.png
+
 # How to register in pypi
 create your account:
 https://pypi.org/account/register/
