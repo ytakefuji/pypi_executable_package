@@ -2,7 +2,7 @@
 
 The example bugcount.py will be automatically converted to bugcount binary executable code.
 
-setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
+setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed for pypi packaging.
 
 The example bugcount.py will be automatically converted to bugcount binary executable code.
 
@@ -99,7 +99,6 @@ $ tree
         ├── __main__.py
         ├── bugcount.py
         └── pillbug.png
-
 </pre>
 
 setup.py plays a key role for packaging pypi.
@@ -168,7 +167,7 @@ You can finally upload your package to pypi:
 $ twine upload dist/*
 If the command is successful, pypi link will be shown.
 
-entry_points in setuptools.setup can generate bin execution file.
+entry_points in setuptools.setup can generate bin execution file, bugcount.
 
 </pre>
 
