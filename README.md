@@ -44,9 +44,9 @@ $ tree
 │           ├── __main__.py
 │           └── bugcount.py
 ├── dist
-│   ├── bugcount-0.0.3-py3-none-any.whl
-│   ├── bugcount-0.0.3-py3.8.egg
-│   └── bugcount-0.0.3.tar.gz
+│   ├── bugcount-0.0.5-py3-none-any.whl
+│   ├── bugcount-0.0.5-py3.8.egg
+│   └── bugcount-0.0.5.tar.gz
 ├── edges.png
 ├── gray.png
 ├── r.png
@@ -55,10 +55,6 @@ $ tree
 └── src
     ├── __init__.py
     ├── __main__.py
-    ├── __pycache__
-    │   ├── __init__.cpython-38.pyc
-    │   ├── bug_count.cpython-38.pyc
-    │   └── bugcount.cpython-38.pyc
     ├── blur.png
     ├── bugcount.egg-info
     │   ├── PKG-INFO
@@ -73,7 +69,13 @@ $ tree
     ├── r.png
     ├── r10.png
     ├── r100.png
-    └── r75.png
+    ├── r75.png
+    └── src
+        ├── __init__.py
+        ├── __main__.py
+        ├── bugcount.py
+        └── pillbug.png
+
 </pre>
 
 setup.py plays a key role for packaging pypi.
