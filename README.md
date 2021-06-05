@@ -15,7 +15,7 @@ https://github.com/ytakefuji/counting-for-entomologists/raw/main/pillbug.png
 
 $ bugcount pillbug.png
 
-https://github.com/ytakefuji/counting-for-entomologists/raw/main/r75.png
+<img src="https://github.com/ytakefuji/counting-for-entomologists/raw/main/r75.png" width=270 height=270>
 
 # How to register in pypi
 create your account:
