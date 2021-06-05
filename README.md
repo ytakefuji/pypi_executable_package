@@ -224,4 +224,5 @@ import bugcount
  $ bugcount pillbug.png
 5. finally upload the new package to pypi.
  $ twine upload dist/*
+ pypi will show the new pypi URL address.
 </pre>
