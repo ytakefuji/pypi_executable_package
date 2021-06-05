@@ -197,6 +197,7 @@ import bugcount
 4. run the following commands to generate the necessary files in dist folder.
  $ python setup.py sdist bdist_wheel
  $ python setup.py install for testing bugcount execution.
+ $ bugcount pillbug.png
 5. finally upload the new package to pypi.
  $ twine upload dist/*
 </pre>
