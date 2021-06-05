@@ -4,6 +4,8 @@ This repository shows how to generate executable python program in bin folder fo
 
 setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed.
 
+bugcount.py is automatically converted to bugcount binary executable code.
+
 # How to register in pypi
 create your account:
 https://pypi.org/account/register/
