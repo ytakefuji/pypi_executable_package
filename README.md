@@ -4,7 +4,7 @@ The example bugcount.py will be automatically converted to bugcount binary execu
 
 setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed for pypi packaging.
 
-Successfully uploading a new package can run the following commands to run bugcount program.
+Successfully uploading a new package can run the following commands to install bugcount program.
 
 $ pip install -U bugcount --user
 
