@@ -26,6 +26,8 @@ $ bugcount pillbug.png 100
 
 <img src="https://github.com/ytakefuji/counting-for-entomologists/raw/main/r100.png" width=270 height=270>
 
+The smaller Canny coeffient, the more objects (BLOBs) can be detected.
+
 # How to register in pypi
 create your account:
 https://pypi.org/account/register/
