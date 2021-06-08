@@ -224,7 +224,6 @@ import bugcount
  $ python setup.py install 
    for testing bugcount execution.
  $ bugcount pillbug.png
- 
 6. check the new package.
 $ twine check dist/*
 7. finally upload the new package to pypi.
