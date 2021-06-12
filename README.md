@@ -207,7 +207,7 @@ import bugcount
 <pre>
 1. modify the program (bugcount.py) for update.
 2. prepare for a new README.md file.
-3. version number in setup.py and setup.cfg must be modified.
+3. version number in setup.py must be modified.
 4. remove all files in dist folder and in build folder respectively.
    since pypi can only accept new version.
 5. run the following commands to generate the necessary files in dist folder.
