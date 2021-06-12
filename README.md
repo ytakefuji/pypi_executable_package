@@ -194,7 +194,7 @@ python_requires = >=3.6
 Where = src
 </pre>
 
-# __init__.py and __main__.py must be modified.
+# "__init__.py" and "__main__.py" must be modified.
 <pre>
 # __init__.py
 $ cat __init__.py
