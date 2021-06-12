@@ -2,7 +2,7 @@
 
 The example bugcount.py will be automatically converted to bugcount binary executable code.
 
-setup.py, setup.cfg, .pypirc, python program (bugcount.py) are needed for pypi packaging.
+setup.py, python program (bugcount.py), and README.md are needed for pypi packaging.
 
 Successfully uploading a new package can run the following commands to install bugcount program.
 
@@ -32,21 +32,7 @@ The smaller Canny coeffient, the more objects (BLOBs) can be detected.
 create your account:
 https://pypi.org/account/register/
 
-# Create .pypirc file using your account information.
-
-<pre>
-$ cat .pypirc
-[distutils]
-index-servers =
-    pypi
-
-[pypi]
-repository=https://pypi.python.org/pypi
-username= ENTER your account name
-password= ENTER your account password
-</pre>
-
-<pre>
+# directory-information
 $ tree
 .
 ├── LICENSE.txt
@@ -95,6 +81,7 @@ $ tree
 
 </pre>
 
+# setup.py 
 setup.py plays a key role for packaging pypi.
 <pre>
 $ cat setup.py
@@ -104,7 +91,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="bugcount",
+    name=<b>"bugcount",
     version="0.0.1",
     author="yoshiyasu takefuji",
     author_email="takefuji@keio.jp",
