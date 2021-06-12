@@ -151,17 +151,11 @@ You should test your program (bugcount) before uploading the pypi package.
 For testing, you should download pillbug.png and run the following command:
 $ bugcount pillbug.png
 
-Option: For testing
-$ python setup.py test
-
 In order to upload a new package, twine installation is needed.
 $ pip install twine
 
 For testing dist package,
 $ twine check dist/*
-
-Option: You can also register testpypi before running the following command.
-$ twine upload --repository testpypi dist/*
 
 You can finally upload your package to pypi:
 $ twine upload dist/*
@@ -171,6 +165,7 @@ entry_points in setuptools.setup can generate bin execution file, bugcount.
 
 </pre>
 
+# setup.cfg is not needed!
 <pre>
 $ cat setup.cfg
 [metadata]
@@ -199,6 +194,7 @@ python_requires = >=3.6
 Where = src
 </pre>
 
+# __init__.py and __main__.py must be modified.
 <pre>
 # __init__.py
 $ cat __init__.py
