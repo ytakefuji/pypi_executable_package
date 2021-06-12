@@ -33,6 +33,7 @@ create your account:
 https://pypi.org/account/register/
 
 # directory-information
+<pre>
 $ tree
 .
 ├── LICENSE.txt
@@ -100,7 +101,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/ytakefuji/counting-for-entomologists",
     project_urls={
-        "Bug Tracker": "https://github.com/ytakefuji/counting-for-entomologists",
+        "Bug Tracker": "https://github.com/ytakefuji/counting-for-entomologists"</b>,
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -113,7 +114,7 @@ setuptools.setup(
     python_requires=">=3.6",
     entry_points = {
         'console_scripts': [
-            'bugcount = bugcount:main'
+            <b>'bugcount = bugcount:main'</b>
         ]
     },
 )
@@ -193,7 +194,7 @@ import bugcount
 # How to update a new version of your program
 <pre>
 1. modify the program (bugcount.py) for update.
-2. prepare for a new README.md file.
+2. prepare for a new README.md file using github README.md.
 3. version number in setup.py must be modified.
 4. remove all files in dist folder and in build folder respectively.
    since pypi can only accept new version.
