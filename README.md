@@ -4,7 +4,8 @@ The example bugcount.py will be automatically converted to bugcount binary execu
 
 setup.py, python program (bugcount.py), and README.md are needed for pypi packaging.
 
-Successfully uploading a new package can run the following commands to install bugcount program.
+Successfully uploading a new pypi package can run the following commands 
+to install bugcount program.
 
 $ pip install -U bugcount --user
 
@@ -28,7 +29,13 @@ $ bugcount pillbug.png 100
 
 The smaller Canny coeffient, the more objects (BLOBs) can be detected.
 
-# How to register in pypi
+<------------------------------------------------------>
+
+# Six steps to package a pypi library.
+
+# 1. Create a Python program (bugcount.py)
+
+# 2. How to register in pypi
 create your account:
 https://pypi.org/account/register/
 
@@ -82,7 +89,7 @@ $ tree
 
 </pre>
 
-# setup.py 
+# 3. Create a setup.py file
 setup.py plays a key role for packaging pypi.
 <pre>
 $ cat setup.py
@@ -119,64 +126,7 @@ setuptools.setup(
     },
 )
 </pre>
-
-# setup.py can automatically create a build folder and a dist folder.:
-<pre>
-A dist folder and a build folder can be automatically generated 
-by the following command:
-$ python setup.py sdist bdist_wheel
-
-egg file in build folder can be automatically generated:
-$ python setup.py install
-
-You should test your program (bugcount) before uploading the pypi package.
-For testing, you should download pillbug.png and run the following command:
-$ bugcount pillbug.png
-
-In order to upload a new package, twine installation is needed.
-$ pip install twine
-
-For testing dist package,
-$ twine check dist/*
-
-You can finally upload your package to pypi:
-$ twine upload dist/*
-If the command is successful, pypi link will be shown.
-
-entry_points in setuptools.setup can generate bin execution file, bugcount.
-
-</pre>
-
-# setup.cfg is not needed!
-<pre>
-$ cat setup.cfg
-[metadata]
-name = bugcount
-version = 0.0.1
-author = yoshiyasu takefuji
-author_email = takefuji@keio.jp
-description = Counting the number of objects or dead bugs
-long_description = file: README.md
-long_description_content_type = text/markdown
-url = https://github.com/ytakefuji/counting-for-entomologists
-project_urls =
-    Bug Tracker = https://github.com/ytakefuji/counting-for-entomologists
-classifiers =
-    Programming Language :: Python :: 3
-    License :: OSI Approved :: MIT License
-    Operating System :: OS Independent
-
-[options]
-package_dir =
-    = src
-packages = find:
-python_requires = >=3.6
-
-[options.packages.find]
-Where = src
-</pre>
-
-# \__init__.py and \__main__.py must be modified
+# 4. Create \__init__.py file and \__main__.py file:
 
 <pre>
 # __init__.py
@@ -189,6 +139,36 @@ import __main__
 # __main__.py
 $ cat __main__.py
 import bugcount
+</pre>
+
+
+# 5. Create a build folder and a dist folder using setup.py:
+<pre>
+A dist folder and a build folder can be automatically generated 
+by the following command:
+$ python setup.py sdist bdist_wheel
+
+egg file in build folder can be automatically generated:
+$ python setup.py install
+
+You should test your program (bugcount) before uploading the pypi package.
+For testing, you should download pillbug.png and run the following command:
+$ bugcount pillbug.png
+</pre>
+
+# 6. Upload files at dist/*.
+<pre>
+In order to upload a new package, twine installation is needed.
+$ pip install twine
+
+For testing dist package,
+$ twine check dist/*
+
+You can finally upload your package to pypi:
+$ twine upload dist/*
+If the command is successful, pypi link will be shown.
+
+entry_points in setuptools.setup can generate bin execution file, bugcount.
 </pre>
 
 # How to update a new version of your program
