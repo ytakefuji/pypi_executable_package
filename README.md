@@ -7,6 +7,10 @@ setup.py, python program (bugcount.py), and README.md are needed for pypi packag
 Successfully uploading a new pypi package can run the following commands 
 to install bugcount program.
 
+$ pip install bugcount 
+
+or
+
 $ pip install -U bugcount --user
 
 You should download pillbug.png file for testing:
@@ -29,7 +33,13 @@ $ bugcount pillbug.png 100
 
 The smaller Canny coeffient, the more objects (BLOBs) can be detected.
 
-======================================================================
+<p> ==============================================</p>
+
+<pre>
+1. It is assumed that You have an internet connected computer. 
+2. You can run Python programs for testing on the computer.
+3. You have a Python program which will be converted to a pypi package.
+</pre>
 
 # Six steps to package a pypi library.
 
@@ -89,7 +99,7 @@ $ tree
 
 </pre>
 
-# 3. Create a setup.py file
+# 3. Create a setup.py file.
 setup.py plays a key role for packaging pypi.
 <pre>
 $ cat setup.py
@@ -126,8 +136,8 @@ setuptools.setup(
     },
 )
 </pre>
-# 4. Create \__init__.py file and \__main__.py file:
 
+# 4. Create \__init__.py file and \__main__.py file:
 <pre>
 # __init__.py
 $ cat __init__.py
@@ -139,10 +149,20 @@ import __main__
 # __main__.py
 $ cat __main__.py
 import bugcount
+
+Make a directory, src.
+$ mkdir src
+
+Move __init__.py and __main__.py to src directory.
+$ mv __init__.py src
+$ mv __main__.py src
+
+Move bugcount.py src directory
+$ mv bugcount.py src
+
 </pre>
 
-
-# 5. Create a build folder and a dist folder using setup.py:
+# 5. Create a build folder and a dist folder by using setup.py:
 <pre>
 A dist folder and a build folder can be automatically generated 
 by the following command:
@@ -160,6 +180,9 @@ $ bugcount pillbug.png
 <pre>
 In order to upload a new package, twine installation is needed.
 $ pip install twine
+
+Download a README.md file from github.
+$ wget README.md_github_link
 
 For testing dist package,
 $ twine check dist/*
