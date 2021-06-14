@@ -29,7 +29,7 @@ $ bugcount pillbug.png 100
 
 The smaller Canny coeffient, the more objects (BLOBs) can be detected.
 
-<------------------------------------------------------>
+======================================================================
 
 # Six steps to package a pypi library.
 
