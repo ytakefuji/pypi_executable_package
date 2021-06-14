@@ -33,7 +33,7 @@ $ bugcount pillbug.png 100
 
 The smaller Canny coeffient, the more objects (BLOBs) can be detected.
 
-<p> ==============================================</p>
+<p>==============================================================</p>
 
 <pre>
 1. It is assumed that You have an internet connected computer. 
